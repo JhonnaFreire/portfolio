@@ -1,0 +1,69 @@
+/* Contact.css */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #140a32;
+  }
+  
+  .contact__title {
+    font-size: 2.5rem;
+    color: #eee;
+    margin-bottom: 1rem;
+  }
+  
+  .contact__subtitle {
+    font-size: 1.8rem;
+    color: #eee;
+  }
+  
+  .contact__description {
+    font-size: 1.1rem;
+    color: #eee;
+    line-height: 1.6;
+  }
+  
+  .contact__whatsapp,
+  .contact__email {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .contact__whatsapp i,
+  .contact__email i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .contact__input {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .contact__empty {
+    margin: 1rem 0;
+  }
+  
+  /* Estilos para pantallas pequeñas (Responsive) */
+  @media screen and (max-width: 600px) {
+    .contact__title {
+      font-size: 2rem;
+    }
+  
+    .contact__subtitle {
+      font-size: 1.6rem;
+    }
+  
+    .contact__description {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+.nav_bar {
+    background-color: #140a32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav_bar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar__button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.nav_bar__button:hover {
+    background-color: #007bff
+}
+
+.nav_bar__button:active {
+    background-color: #007bff
+}
