@@ -13,7 +13,7 @@ const NavBar = () => {
   };
   return (
     <nav className="nav_bar">
-      <h1 className="nav_bar__logo"><img src={Jhonna} /></h1>
+      <img className="nav__bar__img" src={Jhonna} />
       <button className="nav_bar__button" onClick={() => scrollToSection("about-me")}>About me</button>
       <button className="nav_bar__button" onClick={() => scrollToSection("portfolio")}>Portfolio</button>
       <button className="nav_bar__button" onClick={() => scrollToSection("experience")}>Experience</button>

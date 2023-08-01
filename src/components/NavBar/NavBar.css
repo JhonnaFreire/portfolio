@@ -8,11 +8,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav_bar__logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+.nav__bar__img {
+    max-width: 130px;
 }
 
 .nav_bar__button {
