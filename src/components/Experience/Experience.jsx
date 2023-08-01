@@ -1,7 +1,7 @@
 import "./Experience.css";
 import javascript from '/src/assets/img/Js.png'
 import html from '/src/assets/img/html.png'
-import css from '/src/assets/img/css'
+import css from '/src/assets/img/css.png'
 
 
 const Experience = () => {
