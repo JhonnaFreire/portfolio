@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import image1 from '/src/assets/img/20210516_153358_2.jpg'
 
 const AboutMe = () => {
   const scrollToSection = (sectionId) => {
@@ -16,7 +17,7 @@ const AboutMe = () => {
         <header className="aboutme__header">
           <img
             className="aboutme__photo"
-            src="/src/assets/img/20210516_153358_2.jpg"
+            src={image1}
           />
           <h1 className="aboutme__title">About me</h1>
           <p className="aboutme__description">
