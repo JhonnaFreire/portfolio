@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import Jhonna from '/src/assets/img/Jhonna.png'
 
 const NavBar = () => {
   const scrollToSection = (sectionId) => {
@@ -12,7 +13,7 @@ const NavBar = () => {
   };
   return (
     <nav className="nav_bar">
-      <h1 className="nav_bar__logo">Jhonnatan Freire</h1>
+      <h1 className="nav_bar__logo"><img src={Jhonna} /></h1>
       <button className="nav_bar__button" onClick={() => scrollToSection("about-me")}>About me</button>
       <button className="nav_bar__button" onClick={() => scrollToSection("portfolio")}>Portfolio</button>
       <button className="nav_bar__button" onClick={() => scrollToSection("experience")}>Experience</button>
