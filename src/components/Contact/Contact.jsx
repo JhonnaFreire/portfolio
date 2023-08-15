@@ -62,7 +62,7 @@ const Contact = () => {
         />
         <textarea
           className="contact__input_message"
-          placeholder="Message"
+          placeholder=" Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />

@@ -11,7 +11,6 @@
   text-align: center;
   color: white;
 }
-
 .banner::before {
     content: "";
     position: absolute;
@@ -21,18 +20,14 @@
     height: 100%;
     z-index: -1;
 }
-
 .banner__title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  text-transform: uppercase;
 }
-
 .banner__title.banner__title__h2 {
   font-size: 2.5rem;
 }
-
 .banner__button {
   font-size: 1.2rem;
   font-weight: bold;
@@ -45,24 +40,19 @@
   transition: background-color 0.2 ease;
   border-radius: 30px;
 }
-
 .banner__button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 @media screen and (max-width: 768px) {
   .banner {
     font-size: 1.8rem;
   }
-
   .banner__title {
     font-size: 2.5rem;
   }
-
   .banner__title.banner__title__h2 {
     font-size: 2rem;
   }
-
   .banner__button {
     font-size: 1rem;
     padding: 0.8rem 1.5rem;

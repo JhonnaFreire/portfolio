@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <div className="banner">
     <h2 className="banner__title">I'm a </h2>
-    <h2 className="banner__title__h2">Full stack developer.</h2>
+    <h2 className="banner__title__h2"> Full stack developer.</h2>
     <button className="banner__button" onClick={() => scrollToSection("portfolio")}>Projects</button>
     </div>
   )
