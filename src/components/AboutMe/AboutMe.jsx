@@ -1,5 +1,4 @@
 import "./AboutMe.css";
-import image1 from '/src/assets/img/20210516_153358_2.jpg'
 
 const AboutMe = () => {
   const scrollToSection = (sectionId) => {
@@ -12,27 +11,31 @@ const AboutMe = () => {
     }
   };
   return (
-    <body className="body">
-      <article className="aboutme__card">
+    <>
+    <div className="body">
+      <section className="aboutme__card">
         <header className="aboutme__header">
-          <img
-            className="aboutme__photo"
-            src={image1}
-          />
           <h1 className="aboutme__title">About me</h1>
           <p className="aboutme__description">
-            Hey! my name is Jhonnatan Freire and I love to create things with technology, starting with websites with a lot of functions and desings, you can just take a look in some of my works here.
+          Hi there! I'm Jhonnatan Freire, a fullstack web developer specializing in JavaScript, HTML, CSS, and React. I craft seamless digital experiences by blending design and functionality. Let's bring your ideas to life through innovative and dynamic websites and applications. Explore my portfolio and witness the fusion of creativity and technology.
           </p>
-          <button
-            className="aboutme__button"
-            onClick={() => scrollToSection("contact")}
-          >
-            Hire me
-          </button>
-          <button className="aboutme__button">Resume</button>
+          <div className="buttons">
+            <button
+              className="aboutme__buttons"
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact me
+            </button>
+            <span>
+              <h2 className="or">or</h2>
+            </span>
+            <button className="aboutme__buttons">Look my CV</button>
+          </div>
         </header>
-      </article>
-    </body>
+      </section>
+    </div>
+    <hr />
+    </>
   );
 };
 

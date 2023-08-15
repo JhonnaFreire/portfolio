@@ -1,86 +1,75 @@
 .portfolio__body {
-  background-color: #140a32;
+  display: grid;
+  justify-content: center;
   padding-bottom: 20px;
   text-align: center;
-  padding: 5rem;
+  padding-top: 1.5rem;
 }
-
 .portfolio__title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #eee;
-}
-
-.portfolio__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  color: black;
 }
 
 .portfolio__project {
-  width: 300px;
+  width: 200px;
   background-color: #007bff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .portfolio__project-title {
-  font-size: 1.8rem;
-  color: #eee;
+  font-size: 1.5rem;
+  color: white;
   margin-bottom: 1rem;
 }
-
 .portfolio__project-description {
-  font-size: 1.1rem;
-  color: #eee;
+  font-size: 1rem;
+  color: white;
   line-height: 1.6;
 }
-
 .portfolio__view-button {
-  display: block;
-  margin: 0 auto;
-  padding: 1rem 2rem;
   background-color: #007bff;
   color: #fff;
+  font-size: 1em;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Source Code Pro";
 }
-
 .portfolio__view-button:hover {
   background-color: #0056b3;
 }
-
-/* Estilos para pantallas pequeñas (Responsive) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px){
+  .portfolio__title {
+    font-size: 1.9rem;
+  }
+  .portfolio__project-title {
+    font-size: 1.3rem;
+  }
+  .portfolio__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .portfolio__project {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 2400px) {
   .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-@media screen and (min-width: 1024px) {
-  .portfolio__title {
-    font-size: 4rem;
-  }
-
   .portfolio__project {
-    padding: 2.5rem;
+    max-width: 300px;
   }
-
-  .portfolio__project-title {
-    font-size: 2rem;
-  }
-
   .portfolio__project-description {
     font-size: 1.2rem;
   }
-
   .portfolio__view-button {
-    padding: 1.2rem 2.5rem;
-    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 }

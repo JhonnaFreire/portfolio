@@ -1,69 +1,100 @@
-/* Contact.css */
-
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: #140a32;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+.contact__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 30px;
+}
+.contact__title {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+.contact__subtitle {
+  font-size: 1.8rem;
+  color: black;
+  padding-bottom: 5px;
+}
+.contact__description {
+  width: 500px;
+  text-align: center;
+  color: black;
+  padding-bottom: 15px;
+}
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.contact i {
+  color: black;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.contact__input {
+  display: flex;
+  justify-content: center;
+  font-family: "Source Code Pro";
+  width: 300px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.contact__input_message {
+  margin: 15px;
+  width: 300px;
+  height: 100px;
+  font-family: "Source Code Pro";
+  font-size: 1rem;
+}
+.contact__input_message:focus {
+  outline: none;
+  border-color: #3498db;
+}
+.contact__input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.button__send {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Source Code Pro";
+}
+@media screen and (max-width: 412px) {
   .contact__title {
-    font-size: 2.5rem;
-    color: #eee;
-    margin-bottom: 1rem;
-  }
-  
-  .contact__subtitle {
-    font-size: 1.8rem;
-    color: #eee;
-  }
-  
-  .contact__description {
-    font-size: 1.1rem;
-    color: #eee;
-    line-height: 1.6;
-  }
-  
-  .contact__whatsapp,
-  .contact__email {
-    display: flex;
-    align-items: center;
-    color: #eee;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  
-  .contact__whatsapp i,
-  .contact__email i {
     font-size: 1.5rem;
-    margin-right: 0.5rem;
   }
-  
-  .contact__input {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
+  .contact__subtitle {
+    font-size: 1.3rem;
+  }
+  .contact__description {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 200px;
+    padding-bottom: 5px;
+  }
+  .contact {
     font-size: 1rem;
   }
-  
-  .contact__empty {
-    margin: 1rem 0;
+  .contact__buttons {
+    display: grid;
+    gap: 2px;
   }
-  
-  /* Estilos para pantallas pequeñas (Responsive) */
-  @media screen and (max-width: 600px) {
-    .contact__title {
-      font-size: 2rem;
-    }
-  
-    .contact__subtitle {
-      font-size: 1.6rem;
-    }
-  
-    .contact__description {
-      font-size: 1rem;
-    }
-  }
-  
+}

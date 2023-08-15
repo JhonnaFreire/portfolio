@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   const visibleProjects = showAllProjects
     ? allProjects
-    : allProjects.slice(0, 3);
+    : allProjects.slice(0, 2);
 
   const handleViewAllClick = () => {
     setShowAllProjects(true);
@@ -32,16 +32,30 @@ const Portfolio = () => {
         {visibleProjects.map((project) => (
           <div className="portfolio__project" key={project.id}>
             <h2 className="portfolio__project-title">{project.title}</h2>
-            <p className="portfolio__project-description">{project.description}</p>
+            <p className="portfolio__project-description">
+              {project.description}
+            </p>
           </div>
         ))}
       </div>
-      {!showAllProjects && (
-        <button className="portfolio__view-button" onClick={handleViewAllClick}>View All</button>
-      )}
-      {showAllProjects && (
-        <button className="portfolio__view-button" onClick={handleViewLessClick}>View Less</button>
-      )}
+      <div>
+        {!showAllProjects && (
+          <button
+            className="portfolio__view-button"
+            onClick={handleViewAllClick}
+          >
+            View All
+          </button>
+        )}
+        {showAllProjects && (
+          <button
+            className="portfolio__view-button"
+            onClick={handleViewLessClick}
+          >
+            View Less
+          </button>
+        )}
+      </div>
     </div>
   );
 };
