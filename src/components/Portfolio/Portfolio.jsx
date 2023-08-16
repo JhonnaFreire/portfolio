@@ -1,4 +1,10 @@
 import { useState } from "react";
+import Pokemon from "/src/assets/img/pokedex.png";
+import Movies from "/src/assets/img/movies.png";
+import Rick from "/src/assets/img/rick.png";
+import Fortune from "/src/assets/img/fortune.png";
+import Toggle from "/src/assets/img/toggle.png";
+import Ecomm from '/src/assets/img/e-commerce.png'
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -8,7 +14,7 @@ const Portfolio = () => {
       title: "Pokedex",
       description:
         "This funny application shows you the most important Pokemons, in this project I learn how to use an API.",
-      Image: "/src/assets/img/pokedex.png",
+      Image: `${Pokemon}`,
       Link: "https://glistening-faloodeh-1e0b4c.netlify.app/",
     },
     {
@@ -16,35 +22,35 @@ const Portfolio = () => {
       title: "Movies",
       description:
         "This is a simple movie app interface, here I learn how to create a structure using react.",
-      Image: "/src/assets/img/movies.png",
+      Image: `${Movies}`,
     },
     {
       id: 3,
       title: "Rick And Morty",
       description:
         "Here is one of the coolest projects I ever did, using React and a lot of tools with CSS, this site shows us all the characters of this awesome show.",
-      Image: "/src/assets/img/rick.png",
+      Image: `${Rick}`,
     },
     {
       id: 4,
       title: "Fortune Phrases",
       description:
         "This is one of my first projects, this app shows you ramdom fortune phrases in Spanish just clic on one button.",
-      Image: "/src/assets/img/fortune.png",
+      Image: `${Fortune}`,
     },
     {
       id: 5,
       title: "Toggle Menu",
       description:
         "This fashion menu shows us the best way to create a cool menu for a businees, like hotels or restaurants.",
-      Image: "/src/assets/img/toggle.png",
+      Image: `${Toggle}`,
     },
     {
       id: 6,
       title: "E-commerce",
       description:
         "This site is inspired in the Academy I studied, with this project I learn how to create an e-commerce, handleling tools like APIs and CSS rocourses.",
-      Image: "/src/assets/img/e-commerce.png",
+      Image: `${Ecomm}`,
     },
   ];
 
@@ -67,9 +73,9 @@ const Portfolio = () => {
     setSelectedProject((prevSelectedProjects) => {
       const updatedSelectedProjects = new Set(prevSelectedProjects);
       if (!updatedSelectedProjects.has(project.id)) {
-        updatedSelectedProjects.add(project.id)
+        updatedSelectedProjects.add(project.id);
       } else {
-        delete updatedSelectedProjects.delete(project.id)
+        delete updatedSelectedProjects.delete(project.id);
       }
       return updatedSelectedProjects;
     });
