@@ -17,7 +17,7 @@ const AboutMe = () => {
         <header className="aboutme__header">
           <h1 className="aboutme__title">About me</h1>
           <p className="aboutme__description">
-          Hi there! I'm Jhonnatan Freire, a fullstack web developer specializing in JavaScript, HTML, CSS, and React. I craft seamless digital experiences by blending design and functionality. Let's bring your ideas to life through innovative and dynamic websites and applications. Explore my portfolio and witness the fusion of creativity and technology.
+          Hi there! I'm Jhonnatan Freire, a fullstack web developer specializing in JavaScript, HTML, CSS and React. I craft seamless digital experiences by blending design and functionality. Let's bring your ideas to life through innovative and dynamic websites and applications. Explore my portfolio and witness the fusion of creativity and technology.
           </p>
           <div className="buttons">
             <button
