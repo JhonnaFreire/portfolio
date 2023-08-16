@@ -8,8 +8,9 @@
 .portfolio__container {
   display: grid;
   justify-content: center;
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 10px;
+  gap: 10px;
 }
 .portfolio__title {
   font-size: 2.5rem;
@@ -17,35 +18,74 @@
   color: black;
 }
 .portfolio__project {
-  width: 200px;
+  width: 300px;
+  height: auto;
   background-color: #007bff;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 .portfolio__project-title {
   font-size: 1.5rem;
-  color: white;
   margin-bottom: 1rem;
 }
+.shows__container {
+  display: flex;
+  justify-content: center;
+}
+.projects__images {
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 .portfolio__project-description {
-  font-size: 1rem;
+  background-color: #0056b3;
   color: white;
-  line-height: 1.6;
+  width: 270px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: auto;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.portfolio__shows-description {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  width: 120px;
 }
 .portfolio__view-button {
+  font-family: "Source Code Pro";
   background-color: #007bff;
-  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
   font-size: 1em;
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-family: "Source Code Pro";
+  color: #fff;
+}
+.close__des-button {
+  background-color: #007bff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  padding: 8px;
+  border: none;
+  margin-top: 5px;
 }
 .portfolio__view-button:hover {
   background-color: #0056b3;
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 420px) {
   .portfolio__title {
     font-size: 1.9rem;
   }
@@ -61,20 +101,5 @@
   }
   .portfolio__project {
     font-size: 1.3rem;
-  }
-}
-@media screen and (max-width: 2400px) {
-  .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .portfolio__project {
-    max-width: 300px;
-  }
-  .portfolio__project-description {
-    font-size: 1.2rem;
-  }
-  .portfolio__view-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
   }
 }

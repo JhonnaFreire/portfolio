@@ -12,14 +12,16 @@
     margin-right: 450px;
   }
   .nav__bar__buttons {
+    font-family: "Source Code Pro";
     display: flex;
     justify-content: center;
+    cursor: pointer;
     gap: 30px;
-    font-family: "Source Code Pro";
   }
    .nav__bar__button {
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
     padding: 10px;
     border: none;
     background-color: #007bff;

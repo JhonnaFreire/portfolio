@@ -24,12 +24,7 @@ const NavBar = () => {
         <img className="nav__bar__img" src={Jhonna} />
       <nav className={`nav__bar ${menuOpen ? "open" : ""}`}>
         <div className={`nav__bar__buttons ${menuOpen ? 'open' : ''}`}>
-          <button
-            className="nav__bar__button"
-            onClick={() => scrollToSection("about-me")}
-          >
-            About me
-          </button>
+          
           <button
             className="nav__bar__button"
             onClick={() => scrollToSection("portfolio")}
@@ -40,7 +35,7 @@ const NavBar = () => {
             className="nav__bar__button"
             onClick={() => scrollToSection("experience")}
           >
-            Experience
+            Knowledge
           </button>
           <button
             className="nav__bar__button"
