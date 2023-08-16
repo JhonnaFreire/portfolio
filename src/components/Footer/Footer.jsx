@@ -36,7 +36,7 @@ const Footer = () => {
           <i className="bx bxl-linkedin footer__social-icon"></i>
         </a>
         <a
-          href="https://walink.co/4d6da5"
+          href="https://walink.co/4a82a1"
           target="_blank"
           rel="noopener noreferrer"
         >
