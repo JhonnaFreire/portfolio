@@ -48,7 +48,7 @@ const Portfolio = () => {
     },
   ];
 
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProjects, setSelectedProject] = useState(new Set());
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const visibleProjects = showAllProjects
@@ -65,11 +65,11 @@ const Portfolio = () => {
 
   const toggleDescription = (project) => {
     setSelectedProject((prevSelectedProjects) => {
-      const updatedSelectedProjects = { ...prevSelectedProjects };
-      if (!updatedSelectedProjects[project.id]) {
-        updatedSelectedProjects[project.id] = project.description;
+      const updatedSelectedProjects = new Set(prevSelectedProjects);
+      if (!updatedSelectedProjects.has(project.id)) {
+        updatedSelectedProjects.add(project.id)
       } else {
-        delete updatedSelectedProjects[project.id];
+        delete updatedSelectedProjects.delete(project.id)
       }
       return updatedSelectedProjects;
     });
@@ -87,10 +87,10 @@ const Portfolio = () => {
               alt={project.title}
             />
             <div>
-              {selectedProject[project.id] ? (
+              {selectedProjects.has(project.id) ? (
                 <div className="portfolio__project-description">
                   <h3>{project.title} description:</h3>
-                  <p>{selectedProject[project.id]}</p>
+                  <p>{project.description}</p>
                   <button
                     className="close__des-button"
                     onClick={() => toggleDescription(project)}
@@ -99,13 +99,12 @@ const Portfolio = () => {
                   </button>
                 </div>
               ) : (
-
-            <button
-              className="portfolio__shows-description"
-              onClick={() => toggleDescription(project)}
-            >
-              Shows description
-            </button>
+                <button
+                  className="portfolio__shows-description"
+                  onClick={() => toggleDescription(project)}
+                >
+                  Shows description
+                </button>
               )}
             </div>
           </div>
